@@ -11,9 +11,9 @@
 
 ### 특징
 
-![image.png](image.png)
+![image](https://github.com/user-attachments/assets/df734841-d9b4-4ee8-9b39-1c88c62cbe93)
 
-![image.png](image%201.png)
+![image 1](https://github.com/user-attachments/assets/47c6b853-b598-43f4-bc1a-45470158f75c)
 
 ### Persistence 옵션
 
@@ -25,8 +25,8 @@
     
     단점: 스냅샷 저장 전의 최신 데이터 유실 가능성이 있다.
     
-    ![image.png](image%202.png)
-    
+    ![image 2](https://github.com/user-attachments/assets/facf0075-442a-4165-9b82-9ff6cf878a0f)
+
 
 - **AOF (Append Only File)**
     
@@ -36,8 +36,8 @@
     
     단점: 명령 실행 기록을 모두 기록하므로 파일 크기가 크다. “로딩/복구” 속도가 느리다.
     
-    ![image.png](image%203.png)
-    
+    ![image 3](https://github.com/user-attachments/assets/af6c890b-7037-42d5-84bd-8a515846e679)
+
 
 ### Redis 사용시 주의사항⭐
 
@@ -74,16 +74,16 @@
     
     단점: 캐시와 DB의 데이터 정합성 유지가 어렵다. 첫 조회시 DB에 과부하가 발생한다.
     
-    ![image.png](image%204.png)
-    
+    ![image 4](https://github.com/user-attachments/assets/f3a4d22c-6c5b-455e-91f6-defbdcc426da)
+
 - **Read Through**
     
     장점: 데이터 정합성이 강력히 보장된다.
     
     단점: 캐시가 다운되면 데이터 조회 자체가 불가능하다.
     
-    ![image.png](image%205.png)
-    
+    ![image 5](https://github.com/user-attachments/assets/71ba6601-b13e-4894-b8f8-0c1e05a9566b)
+
 
 ### 쓰기 전략
 
@@ -93,8 +93,8 @@
     
     단점: 캐시와 DB의 데이터 정합성 유지가 어렵다. (cache miss 발생시 비로소 캐시에 저장됨. 따라서 그 전까지는 데이터 불일치.)
     
-    ![image.png](image%206.png)
-    
+    ![image 6](https://github.com/user-attachments/assets/f1b40e99-e296-47f0-aba6-f52b5b190aec)
+
 
 - **Write Back**
     
@@ -102,16 +102,16 @@
     
     단점: 캐시의 데이터 유실 위험이 있다.
     
-    ![image.png](image%207.png)
-    
+    ![image 7](https://github.com/user-attachments/assets/d61ed70b-a017-4a42-b7a2-d979cf3446a2)
+
 - **Write Through**
     
     장점: 데이터 정합성이 강력히 보장된다.
     
     단점: 항상 2번씩 쓰게 되므로, 성능이 떨어질 수 있다.
     
-    ![image.png](image%208.png)
-    
+    ![image 8](https://github.com/user-attachments/assets/72465c79-e414-423e-a907-505f3d3a1820)
+
 
 # 3. Spring Data Redis
 
